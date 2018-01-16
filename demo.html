@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="css/Pop-upBox.css" />
+<title>scheduler</title>
+<style>
+    body{
+        background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQIW2OMqXogyYADMIIkl7QpPMcmP+gkAYLGGdeobP2EAAAAAElFTkSuQmCC);
+        user-select:none;
+        font-size:14px;
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+</style>
+</head>
+<body>
+<input type="button" id="btn1" value="添加用户">
+<input type="button" id="btn2" value="修改用户">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/Pop-upBox.js"></script>
+<script>
+    var PB=new popUpBox({
+        language:1
+    })
+    $("#btn1").click(function(){
+        PB.show("add");
+    })
+    $("#btn2").click(function(){
+        PB.show("change");
+    })
+</script>
+</body>
+</html>
